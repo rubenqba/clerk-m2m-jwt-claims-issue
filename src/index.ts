@@ -34,6 +34,8 @@ async function main(): Promise<void> {
   const clerkVerifier = createClerkClient({ secretKey });
   const verifiedToken = await clerkVerifier.m2m.verify({ token: token.token! });
 
+  console.assert(verifiedToken.claims === null, 'Expected verifiedToken.claims to be null');
+
   console.log('\nVerified M2MToken');
   console.log(
     JSON.stringify(
