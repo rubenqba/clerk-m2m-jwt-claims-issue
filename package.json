@@ -1,0 +1,18 @@
+{
+  "name": "clerk-m2m-jwt-claims-issue",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@clerk/backend": "3.4.13",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.4",
+    "tsx": "^4.22.3",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@11.3.0"
+}
